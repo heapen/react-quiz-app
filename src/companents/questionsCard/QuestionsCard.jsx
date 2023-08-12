@@ -13,6 +13,7 @@ const QuestionsCard = ({questionsData, score, setScore, count, setCount, passing
         }
         setCount(count + 1 )
         if(count == 9) setPassing(true)
+        if(count + 1) setTimer(30)
     }
     useEffect(() => {
         const interval = setInterval(() => {

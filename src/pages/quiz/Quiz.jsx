@@ -19,7 +19,7 @@ const Quiz = () => {
         setQuestionsData(data)
     }
      getData();
-     }, [])
+     },[])
      console.log(questionsData)
 
     return (

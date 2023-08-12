@@ -13,6 +13,7 @@ export const fetchQuizData = async(difficulty, amount) => {
     const data = await (await fetch(url)).json();
     return data.results.map((dt) => ({
         ...dt,
-       answer: shuffleArray([...dt.incorrect_answers, dt.correct_answers])
+       answers: shuffleArray([...dt.incorrect_answers, dt.correct_answer])
     }))
 }
+
